@@ -28,7 +28,6 @@
     },
   ],
   model: {
-    scale: 0.0005,
     attributes: [
       'Position',
       'TexCoord',
@@ -38,6 +37,7 @@
     file: 'sampledata/models/Cabin.obj',
     name: 'Cabin',
     recenter: 'root',
+    scale: 0.0005,
   },
   samplers: [
     {

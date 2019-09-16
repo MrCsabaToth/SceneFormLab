@@ -28,7 +28,6 @@
     },
   ],
   model: {
-    scale: 0.25,
     attributes: [
       'Position',
       'TexCoord',
@@ -38,6 +37,7 @@
     file: 'sampledata/models/igloo.obj',
     name: 'igloo',
     recenter: 'root',
+    scale: 0.25,
   },
   version: '0.54:2',
 }
