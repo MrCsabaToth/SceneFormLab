@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
         startAnimation(node, renderable);
     }
 
-    public void onException(Throwable throwable){
+    public void onException(Throwable throwable) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(throwable.getMessage())
                 .setTitle("Codelab error!");
@@ -224,11 +224,11 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    public void startAnimation(TransformableNode node, ModelRenderable renderable){
+    public void startAnimation(TransformableNode node, ModelRenderable renderable) {
         if(renderable==null || renderable.getAnimationDataCount() == 0) {
             return;
         }
-        for(int i = 0;i < renderable.getAnimationDataCount();i++){
+        for(int i = 0;i < renderable.getAnimationDataCount();i++) {
             AnimationData animationData = renderable.getAnimationData(i);
         }
         ModelAnimator animator = new ModelAnimator(renderable.getAnimationData(0), renderable);
